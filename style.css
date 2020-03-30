@@ -1,0 +1,49 @@
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+
+.text-white-50 { color: rgba(255, 255, 255, .5); }
+
+.bg-theme { background-color: #3C6478; }
+
+.lh-100 { line-height: 1; }
+.lh-125 { line-height: 1.25; }
+.lh-150 { line-height: 1.5; }
+
+body {   
+    font-family: 'Varela Round', sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+    #card-profile {
+        width: 300px;
+    }
+}
+
+.card-projects {
+    -webkit-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.57);
+    -moz-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.57);
+    box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.57);    
+}
+
+.projects-link {    
+    z-index: 20; 
+    position: relative;    
+}
+
+.nav-pills .nav-link {
+    background-color: #3C6478 !important;
+    color: white;
+}
+
+.nav-pills .nav-link:not(.active) {
+    background-color: rgb(177, 207, 223) !important;
+}
+
+.nav-link:hover {    
+    color: rgb(120, 139, 150);
+}
+
+
+
