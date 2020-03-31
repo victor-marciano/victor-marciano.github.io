@@ -11,30 +11,15 @@
     <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet"> 
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">    
-    <style>
-        .bd-placeholder-img {
-          font-size: 1.125rem;
-          text-anchor: middle;
-          -webkit-user-select: none;
-          -moz-user-select: none;
-          -ms-user-select: none;
-          user-select: none;
-        }
-  
-        @media (min-width: 768px) {
-          .bd-placeholder-img-lg {
-            font-size: 3.5rem;
-          }
-        }
-      </style>    
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="style.css">
 </head>
   <body>
       <div class="container mt-4">
           <div class="row">
               <div class="col-md-4 col-xs-12">
                   <div class="sidebar mr-4 mr-sm-0 mb-3 mb-sm-0">
-                    <div class="card card-principal" id="card-profile">
+                    <div class="card card-principal wow fadeInLeft" id="card-profile" data-wow-delay="0.2s">
                         <img class="card-img-top" src="img/profile2.jpg" alt="">
                         <div class="card-body">
                             <h4 class="card-title mb-4">Victor Marciano</h4>
@@ -69,7 +54,7 @@
               
               <div class="col-md-8 col-xs-12 mb-5">
                   <div class="content">
-                    <div class="card card-principal">
+                    <div class="card card-principal wow fadeInDown" data-wow-delay="0.3s">
                       <div class="card-header text-center">
                         <ul class="nav nav-pills card-header-pills" role="tablist">
                           <li class="nav-item">
@@ -81,7 +66,7 @@
                         </ul>
                       </div>
                       <div class="tab-content">
-                          <div class="tab-pane fade show active"  id="projectsArea">
+                          <div class="tab-pane fade show active wow fadeInUp"  id="projectsArea" data-wow-delay="0.4s">
                               <div class="card-body">
                                 <h5 class="card-title">My projects</h5>
                                 <p class="card-text text-muted">See below some of my creations.</p>
@@ -100,14 +85,13 @@
                                           <a class="projects-link" href="#">
                                               <img class="card-img" src="img/fastCalc.png" alt="">
                                           </a>
-                                          <div class="card-img-overlay">                                    
-                                          </div>
+                                          <div class="card-img-overlay"></div>
                                       </div>
                                     </div>
                                 </div>
                               </div>
                           </div>
-                          <div class="tab-pane fade" id="servicesArea">
+                          <div class="tab-pane fade wow fadeInUp" id="servicesArea" data-wow-delay="0.4s">
                               <div class="card-body">                                
                                 <div class="row">
                                     <div class="col-md-12">
@@ -158,5 +142,10 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/wow.js"></script>
+    <script>
+      var wow = new WOW();
+      wow.init();
+    </script>    
   </body>
 </html> 
