@@ -15,12 +15,6 @@ body {
     font-family: 'Varela Round', sans-serif;
 }
 
-@media only screen and (max-width: 600px) {
-    #card-profile {
-        width: 330px;        
-    }
-}
-
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
