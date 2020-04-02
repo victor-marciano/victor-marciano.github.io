@@ -61,5 +61,27 @@ body {
     color: rgb(120, 139, 150);
 }
 
+.btn-theme {
+    background-color: #3C6478 !important;
+    color: white !important;
+}
+
+.btn-theme:hover {
+    color: rgb(120, 139, 150);
+}
+
+#marcianoLink:link {
+    color: #3C6478 !important;
+}
+
+#marcianoLink:hover {
+    color: rgb(120, 139, 150) !important;
+    text-decoration: none;
+}
+
+#marcianoLink:visited {
+    color: rgb(177, 207, 223);
+}
+
 
 
