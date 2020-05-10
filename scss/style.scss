@@ -66,6 +66,7 @@ body {
 
 .card-header {
     border-bottom: none;
+    background-color: transparent;
 }
 
 .card-projects {
@@ -115,19 +116,6 @@ body {
     position: relative;    
 }
 
-.nav-pills .nav-link {
-    background-color: $theme-default !important;
-    color: white;
-}
-
-.nav-pills .nav-link:not(.active) {
-    background-color: $theme-light !important;
-}
-
-.nav-link:hover {    
-    color: rgba(255, 255, 255, .5);
-}
-
 .btn-theme {
     background-color: $theme-default !important;
     color: white !important;
@@ -144,4 +132,19 @@ body {
 #marcianoLink:hover {
     color: $theme-default !important;
     text-decoration: none;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: $theme-default;
+    background-color: transparent;
+    border-color: transparent transparent $theme-default;
+    border-bottom: 2px solid !important;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.nav-tabs .nav-link {    
+    border: none;    
+    color: lighten($theme-light, 15%);
+    font-size: 18px;
 }
