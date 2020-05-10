@@ -61,9 +61,24 @@ body {
   -ms-user-select: none;
   user-select: none; }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .bd-placeholder-img-lg {
-    font-size: 3.5rem; } }
+    font-size: 3.5rem; }
+
+  #containerPrincipal {
+    padding: 0; }
+
+  .card-principal {
+    -webkit-box-shadow: 0px 0px 24px -11px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0px 0px 24px -11px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 24px -11px rgba(0, 0, 0, 0.7);
+    border: none; }
+
+  .card {
+    border-radius: 0px; } }
+.card-header {
+  border-bottom: none; }
+
 .card-projects {
   -webkit-box-shadow: 10px 10px 5px -8px rgba(0, 0, 0, 0.57);
   -moz-box-shadow: 10px 10px 5px -8px rgba(0, 0, 0, 0.57);
@@ -76,7 +91,7 @@ body {
   border-color: whitesmoke; }
   .card-principal .card-img-top {
     object-fit: cover;
-    object-position: 5px 10%; }
+    object-position: top; }
   .card-principal .card-line-icon {
     position: relative;
     width: 30px;
