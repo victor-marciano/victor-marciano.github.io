@@ -6,6 +6,7 @@
 html,
 body {
   overflow-x: hidden; /* Prevent scroll on narrow devices */
+  font-family: 'Varela Round', sans-serif;    
 }
 
 .text-white-50 { color: rgba(255, 255, 255, .5); }
@@ -16,10 +17,6 @@ body {
 .lh-125 { line-height: 1.25; }
 .lh-150 { line-height: 1.5; }
 
-body {   
-    font-family: 'Varela Round', sans-serif;
-}
-
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
@@ -27,6 +24,22 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+@media (min-width: 769px) {
+    body {
+        background-image: url("../img/85332.jpg");
+        background-color: rgba(255, 255, 255, 0.41) !important;       
+        // background-color: rgba(255, 255, 255, 0.61) !important;       
+        background-blend-mode: color;
+        background-size: cover;
+        
+    }
+
+    .card {
+        // border-radius: 0px;
+        border: none;
+    }
 }
 
 @media (max-width: 768px) {
@@ -47,6 +60,7 @@ body {
 
     .card {
         border-radius: 0px;
+        border: none;
     }
 }
 
@@ -64,7 +78,9 @@ body {
     -webkit-box-shadow: 0px 0px 24px -11px rgba(0,0,0,0.7);
     -moz-box-shadow: 0px 0px 24px -11px rgba(0,0,0,0.7);
     box-shadow: 0px 0px 24px -11px rgba(0,0,0,0.7);
-    border-color: whitesmoke;   
+    // border-color: whitesmoke;   
+    height: 550px;
+
     .card-img-top {
         object-fit: cover;
         object-position: top;
