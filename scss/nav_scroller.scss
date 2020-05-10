@@ -17,6 +17,7 @@
     text-align: center;
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
+    
   }
   
   .nav-underline .nav-link {
@@ -33,5 +34,6 @@
   
   .nav-underline .active {
     font-weight: 500;
-    color: darken($theme-default, 15%);  
+    color: darken($theme-default, 15%); 
+    border-bottom: 3px solid darken($theme-default, 15%); 
   }
