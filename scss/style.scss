@@ -44,10 +44,19 @@ body {
         border: none;    
     }
 
-    #card-content {
-        // overflow-y: scroll;
+    .icon-social {
+        font-size: 1.6em;
+        color:#3C6478;
     }
 
+    .card-line-social {    
+        a:link, a:visited {
+            color: $theme-light;
+            &:hover {
+                color: $theme-default; 
+            }
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -70,6 +79,17 @@ body {
     .card {
         border-radius: 0px !important;
         border: none !important;
+    }
+
+    .icon-social {
+        font-size: 1.6em;
+        color:$theme-default;
+    }
+
+    .card-line-social {    
+        a:link, a:visited {
+            color: $theme-default;   
+        }
     }
     
 }
@@ -108,15 +128,6 @@ body {
         left: 15px;
     }
     
-}
-
-.card-line-social {    
-    a:link, a:visited {
-        color: $theme-light;
-        &:hover {
-            color: $theme-default; 
-        }
-    }
 }
 
 .projects-link {    

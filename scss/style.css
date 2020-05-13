@@ -83,7 +83,7 @@
   color: #fff;
   display: block;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   padding: 12px 20px 12px 50px;
   position: relative;
   transition: all 0.3s ease 0s; }
@@ -169,7 +169,16 @@ body {
     height: 550px; }
 
   .card {
-    border: none; } }
+    border: none; }
+
+  .icon-social {
+    font-size: 1.6em;
+    color: #3C6478; }
+
+  .card-line-social a:link, .card-line-social a:visited {
+    color: #78a5bc; }
+    .card-line-social a:link:hover, .card-line-social a:visited:hover {
+      color: #3C6478; } }
 @media (max-width: 768px) {
   .bd-placeholder-img-lg {
     font-size: 3.5rem; }
@@ -186,7 +195,14 @@ body {
 
   .card {
     border-radius: 0px !important;
-    border: none !important; } }
+    border: none !important; }
+
+  .icon-social {
+    font-size: 1.6em;
+    color: #3C6478; }
+
+  .card-line-social a:link, .card-line-social a:visited {
+    color: #3C6478; } }
 .card-header {
   border-bottom: none;
   background-color: transparent; }
@@ -212,11 +228,6 @@ body {
     overflow: hidden;
     position: relative;
     left: 15px; }
-
-.card-line-social a:link, .card-line-social a:visited {
-  color: #78a5bc; }
-  .card-line-social a:link:hover, .card-line-social a:visited:hover {
-    color: #3C6478; }
 
 .projects-link {
   z-index: 20;
