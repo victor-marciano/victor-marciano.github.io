@@ -20,7 +20,7 @@
   }
   
   .nav-underline .nav-link {    
-    font-size: 0.910rem;
+    font-size: 1.1rem;
     color: #6c757d;     
   }  
   
@@ -28,4 +28,5 @@
     font-weight: 500;
     color: darken($theme-default, 15%); 
     border-bottom: 2px solid $theme-default; 
+    font-size: 1.2rem;
   }

@@ -29,20 +29,22 @@ var myPieChart = new Chart(ctx, {
     }    
 });
 
-// $('.counter').counterUp({
-//     delay: 10,
-//     time: 1000
-// });
+(function($) {
+	'use strict';
+	
+	jQuery(document).on('ready', function(){	
+        $('a.page-scroll').on('click', function(e){
+            var anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $(anchor.attr('href')).offset().top - 50
+            }, 1500);
+            e.preventDefault();
+        });	
+	});				
+})(jQuery);
 
-// $(".skill_main").each(function() {
-//     $(this).waypoint(function() {
-//         var progressBar = $(".progress-bar");
-//         progressBar.each(function(indx){
-//             $(this).css("width", $(this).attr("aria-valuenow") + "%")
-//         })
-//     }, {
-//         triggerOnce: true,
-//         offset: 'bottom-in-view'
-//     });
-// });
-
+const ps = new PerfectScrollbar('#card-content', {
+    wheelSpeed: 2,
+    wheelPropagation: true,
+    minScrollbarLength: 20
+});

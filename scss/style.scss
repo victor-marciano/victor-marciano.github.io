@@ -2,6 +2,7 @@
 @import "footer.scss";
 @import "progress.scss";
 @import "nav_scroller.scss";
+@import "accordion.scss";
 
 html,
 body {
@@ -29,17 +30,24 @@ body {
 @media (min-width: 769px) {
     body {
         background-image: url("../img/85332.jpg");
-        background-color: rgba(255, 255, 255, 0.41) !important;       
-        // background-color: rgba(255, 255, 255, 0.61) !important;       
+        background-color: rgba(255, 255, 255, 0.41) !important;           
         background-blend-mode: color;
         background-size: cover;
         
     }
 
-    .card {
-        // border-radius: 0px;
-        border: none;
+    .card-principal {
+        height: 550px;       
     }
+
+    .card {    
+        border: none;    
+    }
+
+    #card-content {
+        // overflow-y: scroll;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -55,13 +63,15 @@ body {
         -webkit-box-shadow: 0px 0px 24px -11px rgba(0,0,0,0.7);
         -moz-box-shadow: 0px 0px 24px -11px rgba(0,0,0,0.7);
         box-shadow: 0px 0px 24px -11px rgba(0,0,0,0.7);
-        border: none;            
+        border: none;    
+        height: 100%;              
     }
 
     .card {
-        border-radius: 0px;
-        border: none;
+        border-radius: 0px !important;
+        border: none !important;
     }
+    
 }
 
 .card-header {
@@ -78,10 +88,8 @@ body {
 .card-principal {
     -webkit-box-shadow: 0px 0px 24px -11px rgba(0,0,0,0.7);
     -moz-box-shadow: 0px 0px 24px -11px rgba(0,0,0,0.7);
-    box-shadow: 0px 0px 24px -11px rgba(0,0,0,0.7);
-    // border-color: whitesmoke;   
-    height: 550px;
-
+    box-shadow: 0px 0px 24px -11px rgba(0,0,0,0.7);       
+    
     .card-img-top {
         object-fit: cover;
         object-position: top;
