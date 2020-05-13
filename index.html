@@ -12,6 +12,7 @@
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="css/perfect-scrollbar.css">
     <link rel="stylesheet" href="scss/style.css">
 </head>
   <body>
@@ -77,7 +78,7 @@
               
               <div class="col-md-8 col-xs-12 mb-5">
                   <div class="content">
-                    <div class="card card-principal wow fadeInDown" data-wow-delay="0.2s">
+                    <div class="card card-principal wow fadeInDown" id="card-content" data-wow-delay="0.2s">
                       <div class="card-header text-center">
                         <ul class="nav nav-tabs card-header-pills d-none d-sm-flex" role="tablist">
                           <li class="nav-item">
@@ -87,7 +88,7 @@
                             <a class="nav-link" href="#servicesArea" data-toggle="pill" role="tab" aria-controls="servicesArea" aria-selected="false">Services</a>
                           </li>                                   
                           <li class="nav-item">
-                            <a class="nav-link" href="#educationArea" data-toggle="pill" role="tab" aria-controls="servicesArea" aria-selected="false">Education</a>
+                            <a class="nav-link" href="#educationArea" data-toggle="pill" role="tab" aria-controls="servicesArea" aria-selected="false">Education/Experience</a>
                           </li>                                   
                           <li class="nav-item">
                             <a class="nav-link" href="#skillsArea" data-toggle="pill" role="tab" aria-controls="servicesArea" aria-selected="false">Skills</a>
@@ -97,7 +98,7 @@
                           <nav class="nav nav-underline">
                             <a class="nav-link active" href="#projectsArea" data-toggle="pill" role="tab" aria-controls="projectsArea" aria-selected="false">Projects</a>
                             <a class="nav-link" href="#servicesArea" data-toggle="pill" role="tab" aria-controls="servicesArea" aria-selected="false">Services</a>
-                            <a class="nav-link" href="#educationArea" data-toggle="pill" role="tab" aria-controls="educationArea" aria-selected="false">Education</a>
+                            <a class="nav-link" href="#educationArea" data-toggle="pill" role="tab" aria-controls="educationArea" aria-selected="false">Education/Experience</a>
                             <a class="nav-link" href="#skillsArea" data-toggle="pill" role="tab" aria-controls="skillsArea" aria-selected="false">Skills</a>                           
                           </nav>
                         </div>
@@ -173,7 +174,50 @@
                               <div class="card-body">                                
                                 <div class="row">
                                     <div class="col-md-12">
-                                        
+                                      <div class="panel-group p-2" id="accordion" role="tablist" aria-multiselectable="true">
+                                        <div class="panel panel-default">
+                                          <div class="panel-heading" role="tab" id="headingOne">
+                                            <h4 class="panel-title text-muted">
+                                              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                (2012 - 2014) IFSP - Computer maintenance and support  
+                                              </a>
+                                            </h4>
+                                          </div>
+                                          <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                            <div class="panel-body">
+                                              <p>In this course, i learned to build dynamic web pages with PHP and Javascript(jQuery), and SQL language  through tools like SQL SERVER and MySQL. i learned too how to use Unix based systems and some tasks like install the system , network configuration, permissions, file manipulation, VIM(text editor) and basic comands. I used Debian and Ubuntu to train this discipline. Other things i have meet in this course is about security and management of a  server(web, email, and others) with both of operational systems(Debian and Windows Server). As a final project me and my workgroup developed a little enterprise and a simple websystem to it, with PHP 5.6 and Javascript, with simple business rules and in estructured pattern of coding.</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                          <div class="panel-heading" role="tab" id="headingTwo">
+                                            <h4 class="panel-title">
+                                              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                (2015 - Present) IFSP - Superior in systems analysis and development 
+                                              </a>
+                                            </h4>
+                                          </div>
+                                          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                            <div class="panel-body">
+                                              <p>Nowadays i'm finishing this course, where i really learned how to create web apps with the best pratices and last technologies in the market. With this course i managed to ingress in my first job as a developer, that improved my habilities and show me how the development market and development teams works. </p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                          <div class="panel-heading" role="tab" id="headingThree">
+                                            <h4 class="panel-title">
+                                              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                (2011 - 2012) ALLNET - Simple Web Developer 
+                                              </a>
+                                            </h4>
+                                          </div>
+                                          <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                            <div class="panel-body">
+                                              <p>My first contact with development, in this course i learned programming logic and the basic of HTML, CSS, PHP and Javascript. Corel Draw, Photoshop, Fireworks and Flash has the other things i have learned in this course but i don't continued to work with these tools.</p>
+                                            </div>
+                                          </div>
+                                        </div>                                        
+                                      </div>
                                     </div>                                    
                                 </div>
                               </div>
@@ -236,6 +280,7 @@
     <!-- <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/jquery.counterup.min.js"></script> -->
     <script src="js/wow.js"></script>
+    <script src="js/perfect-scrollbar.min.js"></script>
     <script src="js/app.js"></script>
     <script>
       var wow = new WOW();
